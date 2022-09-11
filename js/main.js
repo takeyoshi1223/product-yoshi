@@ -4,6 +4,7 @@ $(function($){
         interval:5000,
         loop:true
     });
+    
     $(window).scroll(function(){
         var targetElement = $('.fadein').offset().top;
         var scroll = $(window).scrollTop();
@@ -32,6 +33,7 @@ $(function($){
         autoplay: false,
         dots:true,
         centerMode:true,
+        cnterPadding:'20%',
     });
 
     $('nav a[href^="#"]').click(function(){

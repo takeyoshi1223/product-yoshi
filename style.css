@@ -15,6 +15,18 @@
     overflow: hidden;
 }
 
+header{
+    position: relative;
+}
+
+nav{
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    top:0;
+}
+
 nav ul{
     display: flex;
     overflow: hidden;
@@ -167,9 +179,15 @@ nav a{
 
 #course{
     padding: 50px 180px;
-    background-color: #66ffff;
-    background-size: cover;
+    background-color:#3712B0;
 }
+
+#wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+  }
 
 .course-box{
     width:180px;
@@ -304,15 +322,29 @@ nav a{
 
 #images{
     padding:100px 0;
+    background-color: #fff;
+    height:300px;
+}
+
+.slider{
+    margin:30px auto;
+    width:80%;
+    text-align: center;
 }
 
 .slide-img{
-    width: 100px;
+    width: 40%;
+   display: flex;
+   align-items: center;
+   margin-left: 320px;
 }
 
 .slick-initialized .slick-slide{
-    display: flex;
     align-items: center;
+    background-color: #ffffff;
+    height:350px;
+    margin:50px 50px 0 50px;
+    padding:50px;
 }
 
 #access{
@@ -334,4 +366,10 @@ footer{
 footer p{
     color: #3712B0;
     text-align: center;
+}
+
+.fadein{
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s;
 }
