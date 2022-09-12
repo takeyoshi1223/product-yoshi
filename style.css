@@ -3,6 +3,21 @@
     margin:0;
 }
 
+.fadein_visible{
+    animation: fadein 1.5s;
+}
+
+@keyframes fadein{
+    0%{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
 .bg-switcher{
     width: 100vw;
     height:100vh;
@@ -372,4 +387,29 @@ footer p{
     opacity: 0;
     transform: translateY(20px);
     transition: all 1s;
+}
+
+.access-wrap iframe{
+    width: 500px;
+}
+
+@media all and (max-width:480px){
+    .main-visual,
+    .concept-photo,
+    .cfe-photo{
+        background-attachment: scroll;
+    }
+
+    .main-visual h1{
+        text-align: left;
+        font-size: 6rem;
+    }
+
+    .main-visual span{
+        font-size: 1.5rem;
+    }
+
+    .section .heading{
+        width: 80%;
+    }
 }
