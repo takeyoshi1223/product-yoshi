@@ -5,7 +5,7 @@ $(function($){
         loop:true
     });
     
-    $('fadein').css('visibility', 'hidden')
+    $('.fadein').css('visibility', 'hidden')
     $(window).scroll(function(){
         var scroll = $(window).scrollTop();
         var windowHeight = $(window).height();
@@ -15,18 +15,6 @@ $(function($){
            $(this).addClass('fadein_visible')
         }
         });
-    });
-
-    $('.fuwat').css('visibility', 'hidden');
-    $(window).scroll(function() {
-      var windowHeight = $(window).height(),
-        topWindow = $(window).scrollTop();
-      $('.fuwat').each(function() {
-        var objectPosition = $(this).offset().top;
-        if (topWindow > objectPosition - windowHeight + 200) {
-          $(this).addClass("fuwatAnime");
-        }
-      });
     });
 
     $('.slider').slick({
