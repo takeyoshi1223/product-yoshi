@@ -8,13 +8,12 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="slick.css">
     <link rel="stylesheet" href="slick-theme.css">
-    <link rel="stylesheet" href="css/5-4.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="/js/particles.min.js"></script>
+    <script src="/js/particles-settings.js"></script>
     <script src="js/jquery.bgswitcher.js"></script>
     <script src="/js/slick.min.js"></script>
     <script src="/js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="/js/particles.js"></script>
 </head>
 <body>
     <header class="bg-switcher">
@@ -58,65 +57,68 @@
           </div>
       </div>
     </section>
-    <section id="course">
+
+    <section id="courses" class="fuwat">
         <div id="particles-js"></div>
-        <div id="wrapper">
         <div class="fadein">
-          <h2 class="heading">Courses</h2>
-          <div class="course-content">
-              <div class="course-box">
-                  <div class="course-img">
-                    <img src="images/html.png" alt="">
-                  </div>
-                  <p>HTMLコース</p>
-                  <a href="#course" class="button-html">このコースを受ける</a>
+        <h2 class="heading">Courses</h2>
+        <div class="course">
+          <div class="course-container">
+            <div class="course_info" id="html">
+              <div class="course_img">
+                <img src="./images/html.png" alt="">
               </div>
-              <div class="course-box">
-                  <div class="course-img">
-                    <img src="images/css.png" alt="">
-                  </div>
-                  <p>CSSコース</p>
-                  <a href="#course" class="button-css">このコースを受ける</a>
+              <h3>HTMLコース</h3>
+              <a href="#courses" style="background-color: #F16529;">このコースを受ける</a>
+            </div>
+            <div class="course_info" id="css">
+              <div class="course_img">
+                <img src="./images/css.png" alt="">
               </div>
-              <div class="course-box">
-                  <div class="course-img">
-                    <img src="images/unity.png" alt="">
-                  </div>
-                  <p>Unityコース</p>
-                  <a href="#course" class="button-unity">このコースを受ける</a>
+              <h3>CSSコース</h3>
+              <a href="#courses" style="background-color: #29A9DF;">このコースを受ける</a>
+            </div>
+            <div class="course_info" id="unity">
+              <div class="course_img">
+                <img src="./images/unity.png" alt="">
               </div>
-              <div class="course-box">
-                  <div class="course-img">
-                    <img src="images/ruby.png" alt="">
-                  </div>
-                  <p>Rubyコース</p>
-                  <a href="#course" class="button-ruby">このコースを受ける</a>
+              <h3>Unityコース</h3>
+              <a href="#courses" style="background-color: #333333;">このコースを受ける</a>
+            </div>
+            <div class="course_info" id="ruby">
+              <div class="course_img">
+                <img src="./images/ruby.png" alt="">
               </div>
-              <div class="course-box">
-                  <div class="course-img">
-                    <img src="images/js.png" alt="">
-                  </div>
-                  <p>JavaScriptコース</p>
-                  <a href="#course" class="button-java">このコースを受ける</a>
+              <h3>Rubyコース</h3>
+              <a href="#courses" style="background-color: #FF5252;">このコースを受ける</a>
+            </div>
+            <div class="course_info" id="js">
+              <div class="course_img">
+                <img src="./images/js.png" alt="">
               </div>
-              <div class="course-box">
-                  <div class="course-img">
-                    <img src="images/swift.png" alt="">
-                  </div>
-                  <p>Swiftコース</p>
-                  <a href="#course" class="button-swift">このコースを受ける</a>
+              <h3>JavaScriptコース</h3>
+              <a href="#courses" style="background-color: #FED700;">このコースを受ける</a>
+            </div>
+            <div class="course_info" id="swift">
+              <div class="course_img">
+                <img src="./images/swift.png" alt="">
               </div>
-              <div class="course-box">
-                  <div class="course-img">
-                     <img src="images/go.png" alt="">
-                  </div>
-                  <p>Goコース</p>
-                  <a href="#course" class="button-go">このコースを受ける</a>
+              <h3>Swiftコース</h3>
+              <a href="#courses" style="background-color: #FE7536;">このコースを受ける</a>
+            </div>
+            <div class="course_info" id="go">
+              <div class="course_img">
+                <img src="./images/go.png" alt="">
               </div>
+              <h3>Goコース</h3>
+              <a href="#courses" style="background-color: #73CEDD;">このコースを受ける</a>
+            </div>
           </div>
         </div>
         </div>
-    </section>
+      </section>
+  
+    
     <section id="image">
         <div class="fadein">
           <h2 class="heading">Images</h2>

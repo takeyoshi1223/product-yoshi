@@ -4,6 +4,7 @@ $(function($){
         interval:5000,
         loop:true
     });
+    
     $('fadein').css('visibility', 'hidden')
     $(window).scroll(function(){
         var scroll = $(window).scrollTop();
@@ -16,25 +17,21 @@ $(function($){
         });
     });
 
-    $('.more-button').on('click', function() {
-        if ($('.open-box').is(':hidden')) {
-        $('.open-box').slideDown();
-        $(this).text('close');
-        $(this).css('background-color', '#808080');
+    $('.fuwat').css('visibility', 'hidden');
+    $(window).scroll(function() {
+      var windowHeight = $(window).height(),
+        topWindow = $(window).scrollTop();
+      $('.fuwat').each(function() {
+        var objectPosition = $(this).offset().top;
+        if (topWindow > objectPosition - windowHeight + 200) {
+          $(this).addClass("fuwatAnime");
         }
-        else{
-        $('.open-box').slideUp();
-        $(this).text('more');
-        $(this).css('background-color', '#fabb51');
-        }
+      });
     });
 
     $('.slider').slick({
-        arrows:true,
-        autoplay: false,
         dots:true,
-        centerMode:true,
-        cnterPadding:'20%',
+        slidesToShow:4
     });
 
     $('nav a[href^="#"]').click(function(){
